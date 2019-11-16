@@ -19,10 +19,11 @@ public class NDCS extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("LoginUI.fxml"));
         
         Scene scene = new Scene(root);
         
+        stage.setTitle("NDCS Login");
         stage.setScene(scene);
         stage.show();
     }
